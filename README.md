@@ -107,7 +107,7 @@ The website updates within a couple of minutes. If the change matters to users, 
 
 ## Every release: telling the app an update exists
 
-> The app does not read `config.json` yet: the in-app update notice is a planned task. Until it is built, this file changes nothing, but it is ready.
+> The app reads this file (from the build after 2026-10-29): on opening, at most every 6 hours. It shows "Update available" once per new build (then a row in Settings → About), and "Please update" when its build is below `min_build`. The "What's new" people see right after updating comes from the app itself (`nudge/assets/updates/whats_new.json`), not from this file. The app's side of a release is in `nudge/docs/releasing.md`.
 
 `config.json` explained:
 
