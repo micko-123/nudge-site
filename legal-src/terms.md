@@ -1,10 +1,10 @@
 # Nudge — Terms of Service
 
-**DRAFT. Not legal advice. Fill the [bracketed] items and have a lawyer review before publishing.**
+Version 1 · Last updated: 9 November 2026
 
-Version: 1
-Last updated: [date]
-Publisher: [your full name], [city], Ethiopia · Contact: [support email]
+Publisher: Mickyas Asnake, Adama, East Shewa, Oromiya, Ethiopia
+
+Contact: nudgefinanceapp@gmail.com
 
 ## 1. Agreement
 
@@ -13,13 +13,14 @@ You must be at least 18 years old.
 
 ## 2. What Nudge is
 
-Nudge is a tool for tracking and calculating your own money: budgets, debts, goals and habits. **It does not
+Nudge is a tool for tracking and calculating your own money: budgets, debts, goals, investments and habits. **It does not
 give financial, investment, tax or legal advice**, and it is not a bank, lender, broker or payment service.
 It does not move real money. Decisions about your money are yours.
 
 ## 3. Estimates and accuracy
 
-Projections (debt payoff dates, goal dates, forecasts, health score, percentile estimates) are estimates that
+Projections (debt payoff dates, goal dates, forecasts, calculator results, health score, percentile estimates)
+are estimates that
 assume the numbers you entered stay the same. Exchange rates come from a third party, may be delayed, and
 can be overridden by you. Check important figures against your bank or lender statements. We do not
 guarantee that the results are error-free or fit for any particular purpose.
@@ -43,7 +44,7 @@ it for unlawful purposes. Gamification elements such as XP, streaks and badges h
 
 ## 7. Intellectual property
 
-The app, its design and its content belong to [publisher name]. You get a personal, non-exclusive,
+The app, its design and its content belong to Mickyas Asnake. You get a personal, non-exclusive,
 non-transferable licence to use it on your devices. Open-source components are covered by their own
 licences, listed in Settings → About.
 
@@ -65,9 +66,9 @@ continue. You can stop using the app at any time by uninstalling it. We may stop
 
 ## 11. Governing law
 
-These Terms are governed by the laws of [Ethiopia / your chosen jurisdiction]. [Lawyer to confirm venue and
-consumer-law carve-outs for users in other regions.]
+These Terms are governed by the laws of Ethiopia. Nothing in them takes away rights you have under the
+consumer protection laws of the country where you live.
 
 ## 12. Contact
 
-[Your name] · [support email]
+Mickyas Asnake · Adama, East Shewa, Oromiya, Ethiopia · nudgefinanceapp@gmail.com

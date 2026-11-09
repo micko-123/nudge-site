@@ -1,10 +1,10 @@
 # Nudge — Privacy Policy
 
-**DRAFT. Not legal advice. Fill the [bracketed] items and have a lawyer review before publishing.**
+Version 1 · Last updated: 9 November 2026
 
-Version: 1
-Last updated: [date]
-Publisher: [your full name], [city], Ethiopia · Contact: [support email]
+Publisher: Mickyas Asnake, Adama, East Shewa, Oromiya, Ethiopia
+
+Contact: nudgefinanceapp@gmail.com
 
 ## 1. The short version
 
@@ -14,9 +14,12 @@ described in section 4.
 
 ## 2. Data you enter
 
-Accounts, transactions, budgets, goals, debts, recurring items, settings, XP and achievements are stored in a
-database on your device. The app does not upload this data. If you turn on App Lock, the database is
+Accounts, transactions, budgets, goals, debts, investments, saved calculations, recurring items, settings, XP
+and achievements are stored in a database on your device. The app does not upload this data. If you turn on App Lock, the database is
 encrypted, and the key is stored in your device's secure storage.
+
+If you add a Nudge widget to your home screen, it shows your safe-to-spend figure and streak there, where
+anyone holding your unlocked phone can see them. With App Lock on, the widget shows no figures.
 
 ## 3. Permissions
 
@@ -41,7 +44,7 @@ encrypted, and the key is stored in your device's secure storage.
 | Exchange-rate request | open.er-api.com (ExchangeRate-API) | Daily currency rates | No. It is a plain request for rates, and like any internet request it exposes your IP address to that provider. |
 | App settings file | A static file on GitHub Pages | Ad settings, and news of an app update | No user data is sent. It is a plain request for one file. |
 | Crypto prices (optional, only if you turn on automatic crypto prices) | CoinGecko (api.coingecko.com) | Today's price of the coins you hold, at most once a day | Only the coin names and currency codes. Never amounts or holdings. |
-| Backups you share | The app you pick (Drive, email, etc.) | Your own backup | Only when you choose to export and send a file. |
+| Backups, reports and results you share | The app you pick (Drive, email, etc.) | Your own files | Only when you choose to export or share them. |
 | Google on-device helpers (optional, only after you agree) | Google (ML Kit, through Google Play services) | Download Google's document scanner and a text-reading model (about 6 MB), once | No. Your photos and messages are processed on your phone. Like other Google Play services, ML Kit may send Google usage and diagnostic information under Google's terms. You can turn each helper off in Settings → Google on-device helpers. |
 | Voice entry (optional) | Your phone's speech service (for example Google) | Turn speech into words | Your voice, handled by that service under its own terms. Nudge itself sends nothing. |
 
@@ -91,4 +94,4 @@ number above is stored on your device.
 
 ## 11. Contact
 
-[Your name] · [support email] · [public URL of this policy]
+Mickyas Asnake · Adama, East Shewa, Oromiya, Ethiopia · nudgefinanceapp@gmail.com · https://micko-123.github.io/nudge-site/privacy/
