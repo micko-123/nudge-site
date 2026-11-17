@@ -21,6 +21,7 @@ Everything is plain files. There is no server, no database and nothing to pay.
 | `build.py` | Run `python build.py` before every push: it rebuilds the pages and refuses a `config.json` that could hurt users. |
 | `index.html`, `style.css` | The home page and the look (light and dark), in the app's Ocean colours. |
 | `favicon.svg` | The app's logo, used as the tab icon and on the home page. A copy of `nudge/docs/brand/nudge_logo.svg`; replace it there first. |
+| `og.png`, `apple-touch-icon.png` | The preview picture LinkedIn and other sites show for a shared link (from the app's feature graphic), and the icon a phone uses when the site is added to its home screen. |
 | `.nojekyll` | Tells GitHub to serve the files exactly as they are. Leave it. |
 
 ---
