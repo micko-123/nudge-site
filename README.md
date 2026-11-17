@@ -19,7 +19,8 @@ Everything is plain files. There is no server, no database and nothing to pay.
 | `privacy/index.html`, `terms/index.html` | The pages, made from the texts by `build.py`. Do not edit by hand. |
 | `config.json` | The update file. See "Every release" below. |
 | `build.py` | Run `python build.py` before every push: it rebuilds the pages and refuses a `config.json` that could hurt users. |
-| `index.html`, `style.css` | The home page and the look (light and dark). |
+| `index.html`, `style.css` | The home page and the look (light and dark), in the app's Ocean colours. |
+| `favicon.svg` | The app's logo, used as the tab icon and on the home page. A copy of `nudge/docs/brand/nudge_logo.svg`; replace it there first. |
 | `.nojekyll` | Tells GitHub to serve the files exactly as they are. Leave it. |
 
 ---
