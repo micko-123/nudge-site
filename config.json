@@ -10,5 +10,14 @@
     "notes": {
       "en": []
     }
+  },
+  "ads": {
+    "closed": {
+      "enabled": true
+    },
+    "prod": {
+      "enabled": true,
+      "off": []
+    }
   }
 }

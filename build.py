@@ -4,8 +4,9 @@
 
 1. Turns legal-src/privacy.md and legal-src/terms.md into privacy/index.html
    and terms/index.html.
-2. Checks config.json, the file the app reads to learn about updates, and
-   stops with a clear message if something in it could hurt users.
+2. Checks config.json, the file the app reads to learn about updates and
+   its ad settings, and stops with a clear message if something in it could
+   hurt users.
 3. Warns about anything still to fill in: [brackets] and the DRAFT line.
 
 Only Python's standard library is used: nothing to install.
@@ -177,6 +178,68 @@ def check_config():
     for lang, text in reason.items():
         if not isinstance(text, str) or len(text) > 200:
             problems.append(f"config.json: reason.{lang} must be text up to 200")
+    if "ads" in config:
+        problems += check_ads(config["ads"])
+    return problems
+
+
+# The app's ad placements (AdPlacement in nudge/lib/domain/services/ad_config.dart).
+# Keep this list the same as the app's: a name the app does not know is skipped
+# on phones, so a typo would quietly switch nothing off.
+PLACEMENTS = {
+    "historyNative", "achievementsBanner", "homeNative", "investNative",
+    "reportsNative", "insightsNative", "progressBanner", "standBanner",
+    "yearBanner", "calculatorsBanner", "breakInterstitial",
+    "calculatorInterstitial", "rewardedAdFree", "rewardedStreakFreeze",
+    "rewardedTheme", "rewardedStreakRepair", "rewardedQuestXp",
+    "rewardedReportPdf", "rewardedCalculatorPdf", "rewardedInsights",
+}
+
+# The same ranges as the app's remoteAdLimits. Each starts at the app's
+# built-in value and only goes calmer; the app ignores a value outside it.
+AD_LIMITS = {
+    "max_per_session": (0, 6),
+    "quiet_days": (3, 60),
+    "full_screen_gap_hours": (24, 720),
+    "history_first": (6, 200),
+    "history_every": (15, 200),
+}
+
+BUILDS = {"dev", "closed", "prod"}
+
+
+def check_ads(ads):
+    """The "ads" section: per build, on or off, placements off, calmer limits."""
+    if not isinstance(ads, dict):
+        return ['config.json: "ads" must be a section like {"prod": {...}}']
+    problems = []
+    for build, section in ads.items():
+        where = f"config.json: ads.{build}"
+        if build not in BUILDS:
+            problems.append(f"{where}: unknown build (use dev, closed or prod)")
+            continue
+        if not isinstance(section, dict):
+            problems.append(f"{where} must be a section like {{\"enabled\": true}}")
+            continue
+        for key, value in section.items():
+            if key == "enabled":
+                if not isinstance(value, bool):
+                    problems.append(f"{where}.enabled must be true or false")
+            elif key == "off":
+                if not isinstance(value, list):
+                    problems.append(f"{where}.off must be a list of placement names")
+                    continue
+                for name in value:
+                    if name not in PLACEMENTS:
+                        problems.append(f"{where}.off: unknown placement {name!r}")
+            elif key in AD_LIMITS:
+                low, high = AD_LIMITS[key]
+                if not isinstance(value, int) or isinstance(value, bool)                         or not low <= value <= high:
+                    problems.append(
+                        f"{where}.{key} must be a whole number from {low} to {high}"
+                    )
+            else:
+                problems.append(f"{where}: unknown setting {key!r}")
     return problems
 
 
