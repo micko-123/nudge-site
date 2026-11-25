@@ -1,8 +1,8 @@
 # Nudge — Privacy Policy
 
-Version 1 · Last updated: 9 November 2026
+Version 1 · Last updated: 25 November 2026
 
-Publisher: Mickyas Asnake, Adama, East Shewa, Oromiya, Ethiopia
+Publisher: Mickyas Asnake, Addis Ababa, Ethiopia
 
 Contact: nudgefinanceapp@gmail.com
 
@@ -94,4 +94,4 @@ number above is stored on your device.
 
 ## 11. Contact
 
-Mickyas Asnake · Adama, East Shewa, Oromiya, Ethiopia · nudgefinanceapp@gmail.com · https://micko-123.github.io/nudge-site/privacy/
+Mickyas Asnake · Addis Ababa, Ethiopia · nudgefinanceapp@gmail.com · https://micko-123.github.io/nudge-site/privacy/

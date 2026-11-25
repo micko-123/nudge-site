@@ -1,8 +1,8 @@
 # Nudge — Terms of Service
 
-Version 1 · Last updated: 9 November 2026
+Version 1 · Last updated: 25 November 2026
 
-Publisher: Mickyas Asnake, Adama, East Shewa, Oromiya, Ethiopia
+Publisher: Mickyas Asnake, Addis Ababa, Ethiopia
 
 Contact: nudgefinanceapp@gmail.com
 
@@ -71,4 +71,4 @@ consumer protection laws of the country where you live.
 
 ## 12. Contact
 
-Mickyas Asnake · Adama, East Shewa, Oromiya, Ethiopia · nudgefinanceapp@gmail.com
+Mickyas Asnake · Addis Ababa, Ethiopia · nudgefinanceapp@gmail.com
